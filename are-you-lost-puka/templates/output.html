@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_gare_123 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_gare_123" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_gare_123 = L.map(
+                "map_gare_123",
+                {
+                    center: [47.356982176923076, 2.7106538307692314],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_gare_123);
+
+            
+
+        
+    
+            var tile_layer_910168625e60b118e1b73c07cd0b63b7 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_910168625e60b118e1b73c07cd0b63b7.addTo(map_gare_123);
+        
+    
+            var marker_cluster_7c12c67b07d257c4a9637ae388df31b6 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_79d45f1a544f81207765e0cdd16cf1c4 = L.marker(
+                [45.954008, 5.342388],
+                {
+  "parseHtml": true,
+}
+            ).addTo(marker_cluster_7c12c67b07d257c4a9637ae388df31b6);
+        
+    
+        var popup_38bf56dc775d47b4d95d0a0c746bdb56 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                marker_79d45f1a544f81207765e0cdd16cf1c4.once('click', function() {
+                    popup_38bf56dc775d47b4d95d0a0c746bdb56.setContent($(`<div id="html_275357d94dc4efa3d0a4024710326edc" style="width: 100.0%; height: 100.0%;"><div style="position:relative; width: 500px; min-height:200px; max-height:1000px;"><h3 style="text-align:center; font-weight: bold;">SNCF Ambérieu-en-Bugey</h3><iframe   id="inlineFrameExample"   title="Inline Frame Example"   style="position: absolute; width:100%;height:90%;padding: 5px;"   src="http://127.0.0.1:5000/gare/0087743716">   </iframe></div></div>`)[0]);
+                });
+            
+        
+
+        marker_79d45f1a544f81207765e0cdd16cf1c4.bindPopup(popup_38bf56dc775d47b4d95d0a0c746bdb56)
+        ;
+
+        
+    
+    
+            marker_79d45f1a544f81207765e0cdd16cf1c4.bindTooltip(
+                `<div>
+                     <div style="margin:0px 1px"><h4 style="text-align:center; font-weight: bold;">SNCF Ambérieu-en-Bugey</h4><h5 style="text-align:center">Objets trouvés: 1</h5></div>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0c5e57f7db8bb0c163dec09bd652f977 = L.marker(
+                [45.187408, 0.707879],
+                {
+  "parseHtml": true,
+}
+            ).addTo(marker_cluster_7c12c67b07d257c4a9637ae388df31b6);
+        
+    
+        var popup_139bec80dd0bce299a414a2d364c5695 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                marker_0c5e57f7db8bb0c163dec09bd652f977.once('click', function() {
+                    popup_139bec80dd0bce299a414a2d364c5695.setContent($(`<div id="html_9430fce91352e1ff01449f32c48fe562" style="width: 100.0%; height: 100.0%;"><div style="position:relative; width: 500px; min-height:200px; max-height:1000px;"><h3 style="text-align:center; font-weight: bold;">SNCF Périgueux</h3><iframe   id="inlineFrameExample"   title="Inline Frame Example"   style="position: absolute; width:100%;height:90%;padding: 5px;"   src="http://127.0.0.1:5000/gare/0087595009">   </iframe></div></div>`)[0]);
+                });
+            
+        
+
+        marker_0c5e57f7db8bb0c163dec09bd652f977.bindPopup(popup_139bec80dd0bce299a414a2d364c5695)
+        ;
+
+        
+    
+    
+            marker_0c5e57f7db8bb0c163dec09bd652f977.bindTooltip(
+                `<div>
+                     <div style="margin:0px 1px"><h4 style="text-align:center; font-weight: bold;">SNCF Périgueux</h4><h5 style="text-align:center">Objets trouvés: 1</h5></div>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_fa7c57cfcce9945a39350ebe65ce1467 = L.marker(
+                [44.928049, 4.893273],
+                {
+  "parseHtml": true,
+}
+            ).addTo(marker_cluster_7c12c67b07d257c4a9637ae388df31b6);
+        
+    
+        var popup_dced04746c201a7f8687085e208debbf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                marker_fa7c57cfcce9945a39350ebe65ce1467.once('click', function() {
+                    popup_dced04746c201a7f8687085e208debbf.setContent($(`<div id="html_d646437f6a0242cbf19fcf6d154e9b20" style="width: 100.0%; height: 100.0%;"><div style="position:relative; width: 500px; min-height:200px; max-height:1000px;"><h3 style="text-align:center; font-weight: bold;">SNCF Valence</h3><iframe   id="inlineFrameExample"   title="Inline Frame Example"   style="position: absolute; width:100%;height:90%;padding: 5px;"   src="http://127.0.0.1:5000/gare/0087761007">   </iframe></div></div>`)[0]);
+                });
+            
+        
+
+        marker_fa7c57cfcce9945a39350ebe65ce1467.bindPopup(popup_dced04746c201a7f8687085e208debbf)
+        ;
+
+        
+    
+    
+            marker_fa7c57cfcce9945a39350ebe65ce1467.bindTooltip(
+                `<div>
+                     <div style="margin:0px 1px"><h4 style="text-align:center; font-weight: bold;">SNCF Valence</h4><h5 style="text-align:center">Objets trouvés: 1</h5></div>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2895ccc2e87f427990263b09a39ecdae = L.marker(
+                [42.696292, 2.879779],
+                {
+  "parseHtml": true,
+}
+            ).addTo(marker_cluster_7c12c67b07d257c4a9637ae388df31b6);
+        
+    
+        var popup_164a7e62a4cadf2a9dc38741ba92e726 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                marker_2895ccc2e87f427990263b09a39ecdae.once('click', function() {
+                    popup_164a7e62a4cadf2a9dc38741ba92e726.setContent($(`<div id="html_a512fc991ca7560249aa5d05281561cc" style="width: 100.0%; height: 100.0%;"><div style="position:relative; width: 500px; min-height:200px; max-height:1000px;"><h3 style="text-align:center; font-weight: bold;">SNCF Perpignan</h3><iframe   id="inlineFrameExample"   title="Inline Frame Example"   style="position: absolute; width:100%;height:90%;padding: 5px;"   src="http://127.0.0.1:5000/gare/0087784009">   </iframe></div></div>`)[0]);
+                });
+            
+        
+
+        marker_2895ccc2e87f427990263b09a39ecdae.bindPopup(popup_164a7e62a4cadf2a9dc38741ba92e726)
+        ;
+
+        
+    
+    
+            marker_2895ccc2e87f427990263b09a39ecdae.bindTooltip(
+                `<div>
+                     <div style="margin:0px 1px"><h4 style="text-align:center; font-weight: bold;">SNCF Perpignan</h4><h5 style="text-align:center">Objets trouvés: 1</h5></div>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8981e507b26a15c5a7f7915580f005da = L.marker(
+                [47.32337, 5.027208],
+                {
+  "parseHtml": true,
+}
+            ).addTo(marker_cluster_7c12c67b07d257c4a9637ae388df31b6);
+        
+    
+        var popup_a1a0e9208fa3e195b7ee96e0a313a019 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                marker_8981e507b26a15c5a7f7915580f005da.once('click', function() {
+                    popup_a1a0e9208fa3e195b7ee96e0a313a019.setContent($(`<div id="html_a43acd202dc2814cdbda8cee9d8450e2" style="width: 100.0%; height: 100.0%;"><div style="position:relative; width: 500px; min-height:200px; max-height:1000px;"><h3 style="text-align:center; font-weight: bold;">SNCF Dijon</h3><iframe   id="inlineFrameExample"   title="Inline Frame Example"   style="position: absolute; width:100%;height:90%;padding: 5px;"   src="http://127.0.0.1:5000/gare/0087713040">   </iframe></div></div>`)[0]);
+                });
+            
+        
+
+        marker_8981e507b26a15c5a7f7915580f005da.bindPopup(popup_a1a0e9208fa3e195b7ee96e0a313a019)
+        ;
+
+        
+    
+    
+            marker_8981e507b26a15c5a7f7915580f005da.bindTooltip(
+                `<div>
+                     <div style="margin:0px 1px"><h4 style="text-align:center; font-weight: bold;">SNCF Dijon</h4><h5 style="text-align:center">Objets trouvés: 1</h5></div>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_543a8c73736d300b829f7358f469656f = L.marker(
+                [47.464647, -0.55682],
+                {
+  "parseHtml": true,
+}
+            ).addTo(marker_cluster_7c12c67b07d257c4a9637ae388df31b6);
+        
+    
+        var popup_2eebff94f967d0c5f9606d60f5d30ba5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                marker_543a8c73736d300b829f7358f469656f.once('click', function() {
+                    popup_2eebff94f967d0c5f9606d60f5d30ba5.setContent($(`<div id="html_b4eac96d773ce505c50440498b0a925d" style="width: 100.0%; height: 100.0%;"><div style="position:relative; width: 500px; min-height:200px; max-height:1000px;"><h3 style="text-align:center; font-weight: bold;">SNCF Angers Saint-Laud</h3><iframe   id="inlineFrameExample"   title="Inline Frame Example"   style="position: absolute; width:100%;height:90%;padding: 5px;"   src="http://127.0.0.1:5000/gare/0087484006">   </iframe></div></div>`)[0]);
+                });
+            
+        
+
+        marker_543a8c73736d300b829f7358f469656f.bindPopup(popup_2eebff94f967d0c5f9606d60f5d30ba5)
+        ;
+
+        
+    
+    
+            marker_543a8c73736d300b829f7358f469656f.bindTooltip(
+                `<div>
+                     <div style="margin:0px 1px"><h4 style="text-align:center; font-weight: bold;">SNCF Angers Saint-Laud</h4><h5 style="text-align:center">Objets trouvés: 1</h5></div>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c4f75971548b87e5a920307e2676f1d7 = L.marker(
+                [50.639224, 3.075796],
+                {
+  "parseHtml": true,
+}
+            ).addTo(marker_cluster_7c12c67b07d257c4a9637ae388df31b6);
+        
+    
+        var popup_c8e330fe018455a19973acf0bf997fea = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                marker_c4f75971548b87e5a920307e2676f1d7.once('click', function() {
+                    popup_c8e330fe018455a19973acf0bf997fea.setContent($(`<div id="html_15e0443702bdd7bc25b034e78eb29704" style="width: 100.0%; height: 100.0%;"><div style="position:relative; width: 500px; min-height:200px; max-height:1000px;"><h3 style="text-align:center; font-weight: bold;">SNCF Lille Europe</h3><iframe   id="inlineFrameExample"   title="Inline Frame Example"   style="position: absolute; width:100%;height:90%;padding: 5px;"   src="http://127.0.0.1:5000/gare/0087223263">   </iframe></div></div>`)[0]);
+                });
+            
+        
+
+        marker_c4f75971548b87e5a920307e2676f1d7.bindPopup(popup_c8e330fe018455a19973acf0bf997fea)
+        ;
+
+        
+    
+    
+            marker_c4f75971548b87e5a920307e2676f1d7.bindTooltip(
+                `<div>
+                     <div style="margin:0px 1px"><h4 style="text-align:center; font-weight: bold;">SNCF Lille Europe</h4><h5 style="text-align:center">Objets trouvés: 1</h5></div>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0851514d9b2393f35b42979cacd956f6 = L.marker(
+                [48.876242, 2.325331],
+                {
+  "parseHtml": true,
+}
+            ).addTo(marker_cluster_7c12c67b07d257c4a9637ae388df31b6);
+        
+    
+        var popup_73741a152b108209cbed23f4d4bc89e3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                marker_0851514d9b2393f35b42979cacd956f6.once('click', function() {
+                    popup_73741a152b108209cbed23f4d4bc89e3.setContent($(`<div id="html_0f137fb812706d87d5362c2b96e629d6" style="width: 100.0%; height: 100.0%;"><div style="position:relative; width: 500px; min-height:200px; max-height:1000px;"><h3 style="text-align:center; font-weight: bold;">SNCF Paris Saint-Lazare</h3><iframe   id="inlineFrameExample"   title="Inline Frame Example"   style="position: absolute; width:100%;height:90%;padding: 5px;"   src="http://127.0.0.1:5000/gare/0087384008">   </iframe></div></div>`)[0]);
+                });
+            
+        
+
+        marker_0851514d9b2393f35b42979cacd956f6.bindPopup(popup_73741a152b108209cbed23f4d4bc89e3)
+        ;
+
+        
+    
+    
+            marker_0851514d9b2393f35b42979cacd956f6.bindTooltip(
+                `<div>
+                     <div style="margin:0px 1px"><h4 style="text-align:center; font-weight: bold;">SNCF Paris Saint-Lazare</h4><h5 style="text-align:center">Objets trouvés: 1</h5></div>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_98b1b3516a35555bde7a455be36690eb = L.marker(
+                [45.571302, 5.919547],
+                {
+  "parseHtml": true,
+}
+            ).addTo(marker_cluster_7c12c67b07d257c4a9637ae388df31b6);
+        
+    
+        var popup_d14df781d9ad9804d64587211d1d728a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                marker_98b1b3516a35555bde7a455be36690eb.once('click', function() {
+                    popup_d14df781d9ad9804d64587211d1d728a.setContent($(`<div id="html_8945bd9d3cef4183ae425e203bf90a36" style="width: 100.0%; height: 100.0%;"><div style="position:relative; width: 500px; min-height:200px; max-height:1000px;"><h3 style="text-align:center; font-weight: bold;">SNCF Chambéry - Challes-les-Eaux</h3><iframe   id="inlineFrameExample"   title="Inline Frame Example"   style="position: absolute; width:100%;height:90%;padding: 5px;"   src="http://127.0.0.1:5000/gare/0087741009">   </iframe></div></div>`)[0]);
+                });
+            
+        
+
+        marker_98b1b3516a35555bde7a455be36690eb.bindPopup(popup_d14df781d9ad9804d64587211d1d728a)
+        ;
+
+        
+    
+    
+            marker_98b1b3516a35555bde7a455be36690eb.bindTooltip(
+                `<div>
+                     <div style="margin:0px 1px"><h4 style="text-align:center; font-weight: bold;">SNCF Chambéry - Challes-les-Eaux</h4><h5 style="text-align:center">Objets trouvés: 1</h5></div>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4533d4bad975464206a4f1833b06ffc7 = L.marker(
+                [48.4482023, 1.4813128],
+                {
+  "parseHtml": true,
+}
+            ).addTo(marker_cluster_7c12c67b07d257c4a9637ae388df31b6);
+        
+    
+        var popup_ad7b5f5c443e2884d7db32c99b56ea34 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                marker_4533d4bad975464206a4f1833b06ffc7.once('click', function() {
+                    popup_ad7b5f5c443e2884d7db32c99b56ea34.setContent($(`<div id="html_aa413058fdcb90079750145c859a7449" style="width: 100.0%; height: 100.0%;"><div style="position:relative; width: 500px; min-height:200px; max-height:1000px;"><h3 style="text-align:center; font-weight: bold;">SNCF Chartres</h3><iframe   id="inlineFrameExample"   title="Inline Frame Example"   style="position: absolute; width:100%;height:90%;padding: 5px;"   src="http://127.0.0.1:5000/gare/0087394007">   </iframe></div></div>`)[0]);
+                });
+            
+        
+
+        marker_4533d4bad975464206a4f1833b06ffc7.bindPopup(popup_ad7b5f5c443e2884d7db32c99b56ea34)
+        ;
+
+        
+    
+    
+            marker_4533d4bad975464206a4f1833b06ffc7.bindTooltip(
+                `<div>
+                     <div style="margin:0px 1px"><h4 style="text-align:center; font-weight: bold;">SNCF Chartres</h4><h5 style="text-align:center">Objets trouvés: 1</h5></div>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_398ec1cac8d24d38e4974821bfa08644 = L.marker(
+                [47.464647, -0.55682],
+                {
+  "parseHtml": true,
+}
+            ).addTo(marker_cluster_7c12c67b07d257c4a9637ae388df31b6);
+        
+    
+        var popup_22a4d29ec6c8d8f20cabbef72fc6e461 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                marker_398ec1cac8d24d38e4974821bfa08644.once('click', function() {
+                    popup_22a4d29ec6c8d8f20cabbef72fc6e461.setContent($(`<div id="html_bcd751b9fbd74c0538e080930cf7eeea" style="width: 100.0%; height: 100.0%;"><div style="position:relative; width: 500px; min-height:200px; max-height:1000px;"><h3 style="text-align:center; font-weight: bold;">SNCF Angers Saint-Laud</h3><iframe   id="inlineFrameExample"   title="Inline Frame Example"   style="position: absolute; width:100%;height:90%;padding: 5px;"   src="http://127.0.0.1:5000/gare/0087484006">   </iframe></div></div>`)[0]);
+                });
+            
+        
+
+        marker_398ec1cac8d24d38e4974821bfa08644.bindPopup(popup_22a4d29ec6c8d8f20cabbef72fc6e461)
+        ;
+
+        
+    
+    
+            marker_398ec1cac8d24d38e4974821bfa08644.bindTooltip(
+                `<div>
+                     <div style="margin:0px 1px"><h4 style="text-align:center; font-weight: bold;">SNCF Angers Saint-Laud</h4><h5 style="text-align:center">Objets trouvés: 1</h5></div>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4a343459e7907521342da8b6f77ecb59 = L.marker(
+                [50.371677, 3.089986],
+                {
+  "parseHtml": true,
+}
+            ).addTo(marker_cluster_7c12c67b07d257c4a9637ae388df31b6);
+        
+    
+        var popup_9da98fcc9571cff96596298c341e215b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                marker_4a343459e7907521342da8b6f77ecb59.once('click', function() {
+                    popup_9da98fcc9571cff96596298c341e215b.setContent($(`<div id="html_f5ef780ffd3c6237f9331ffcff003273" style="width: 100.0%; height: 100.0%;"><div style="position:relative; width: 500px; min-height:200px; max-height:1000px;"><h3 style="text-align:center; font-weight: bold;">SNCF Douai</h3><iframe   id="inlineFrameExample"   title="Inline Frame Example"   style="position: absolute; width:100%;height:90%;padding: 5px;"   src="http://127.0.0.1:5000/gare/0087345009">   </iframe></div></div>`)[0]);
+                });
+            
+        
+
+        marker_4a343459e7907521342da8b6f77ecb59.bindPopup(popup_9da98fcc9571cff96596298c341e215b)
+        ;
+
+        
+    
+    
+            marker_4a343459e7907521342da8b6f77ecb59.bindTooltip(
+                `<div>
+                     <div style="margin:0px 1px"><h4 style="text-align:center; font-weight: bold;">SNCF Douai</h4><h5 style="text-align:center">Objets trouvés: 1</h5></div>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0df50c8e1f700392774da32d1d9e4a28 = L.marker(
+                [50.7157, 1.60964],
+                {
+  "parseHtml": true,
+}
+            ).addTo(marker_cluster_7c12c67b07d257c4a9637ae388df31b6);
+        
+    
+        var popup_d712b2f68038c8d923dbbfa1d7548842 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                marker_0df50c8e1f700392774da32d1d9e4a28.once('click', function() {
+                    popup_d712b2f68038c8d923dbbfa1d7548842.setContent($(`<div id="html_18f0ec5ca489bd36241a900fd0080241" style="width: 100.0%; height: 100.0%;"><div style="position:relative; width: 500px; min-height:200px; max-height:1000px;"><h3 style="text-align:center; font-weight: bold;">SNCF Boulogne-sur-Mer</h3><iframe   id="inlineFrameExample"   title="Inline Frame Example"   style="position: absolute; width:100%;height:90%;padding: 5px;"   src="http://127.0.0.1:5000/gare/0087317586">   </iframe></div></div>`)[0]);
+                });
+            
+        
+
+        marker_0df50c8e1f700392774da32d1d9e4a28.bindPopup(popup_d712b2f68038c8d923dbbfa1d7548842)
+        ;
+
+        
+    
+    
+            marker_0df50c8e1f700392774da32d1d9e4a28.bindTooltip(
+                `<div>
+                     <div style="margin:0px 1px"><h4 style="text-align:center; font-weight: bold;">SNCF Boulogne-sur-Mer</h4><h5 style="text-align:center">Objets trouvés: 1</h5></div>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            marker_cluster_7c12c67b07d257c4a9637ae388df31b6.addTo(map_gare_123);
+        
+</script>
+</html>
